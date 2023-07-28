@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap');
+
+body{
+    background: linear-gradient(to left, rgb(21, 1, 77),rgb(1, 71, 77));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+.container{
+    background-color: rgb(12, 12, 12);
+    border: 2px solid rgb(46, 46, 248);
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px 0 rgb(6, 144, 207);
+    margin: 20px auto;
+    max-width: 540px;
+    /* height: 50vh;  */
+}
+
+.calculo{
+    text-align: center;
+    padding: 20px;
+    height: 90%;  
+} 
+
+.container .calculo h1, .meu-imc h2{
+    font-size: 2rem;
+    color: rgb(54, 159, 163);   
+}
+
+.container .calculo .item-calculo{
+    text-align: start;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.6rem;
+    color: azure;
+
+}
+
+.container .calculo .item-calculo input{
+    margin-left: 5%;
+    text-align: center;
+    max-width: 40%;
+    padding: 25px;
+    height: 35px;
+    font-size: 1.3rem;
+    border: 2px solid rgb(46, 46, 248);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 0 rgb(6, 144, 207);
+    cursor: pointer;
+}
+
+.button{
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 25px;
+    background-color: #38b6ff;
+    color: #222222;
+    font-size: 1.6rem;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(46, 46, 248);
+    transition: 0.3 ease-in-out;
+    max-height: 70px;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, rgb(21, 1, 77),rgb(1, 71, 77));
+    color: #fff;
+}
+
+.meu-imc{
+    max-width: 540px;
+    height: 40%;
+    margin: 0 auto;
+    background-color: #101011;
+    border: 2px solid rgb(46, 46, 248);
+    border-radius: 15px;
+    box-shadow: 0 0 25px 0 rgb(6, 144, 207);
+    text-align: center;
+}
+
+.resultado {
+    width: 90%;
+    height: 70%;
+    background-color: #222222;
+    border: 1px solid #38b6ff;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px;
+}
+
+@media(max-width: 680px){
+    .container, .meu-imc{
+        margin: 10px;
+    }
+
+    .container .calculo .item-calculo input{
+        font-size: 1rem;
+    }
+
+    .container .calculo .item-calculo{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media(max-width: 360px){
+    .container .calculo h1, .meu-imc h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 1026px){
+    .container .calculo .item-calculo{
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .container .calculo h1, .meu-imc h2{
+        font-size: 1.3rem;
+    }
+
+    .container .calculo .item-calculo input{
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+}
+
